@@ -270,3 +270,7 @@ transition:0.3s;
 .nav-links a:hover {
 color:#00fff2;
 }
+.nav-links a.active {
+color:#00fff2;
+border-bottom:2px solid #00fff2;
+}
