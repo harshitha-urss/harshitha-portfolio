@@ -51,3 +51,7 @@ top: 50,
 behavior: "smooth"
 });
 };
+
+html {
+scroll-behavior: smooth;
+}
