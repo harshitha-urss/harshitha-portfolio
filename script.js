@@ -44,3 +44,10 @@ setTimeout(type, deleting ? 50 : 100);
 }
 
 type();
+
+window.onload = () => {
+window.scrollTo({
+top: 50,
+behavior: "smooth"
+});
+};
