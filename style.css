@@ -184,3 +184,35 @@ transition:0.8s;
 opacity:1;
 transform:translateY(0);
 }
+
+/* PRICING */
+.pricing {
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.price-card {
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(0,255,242,0.2);
+padding:25px;
+border-radius:15px;
+width:250px;
+transition:0.3s;
+}
+
+.price-card:hover {
+transform:translateY(-8px);
+box-shadow:0 0 15px rgba(0,255,242,0.3);
+}
+
+.price-card h4 {
+color:#00fff2;
+margin:15px 0;
+}
+
+.highlight {
+border:2px solid #00fff2;
+box-shadow:0 0 20px rgba(0,255,242,0.4);
+}
