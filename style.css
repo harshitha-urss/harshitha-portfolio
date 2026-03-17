@@ -233,3 +233,9 @@ animation: bounce 1.5s infinite;
 0%,100% { transform: translateY(0); }
 50% { transform: translateY(10px); }
 }
+
+.hero-hint {
+margin-top:10px;
+opacity:0.6;
+font-size:14px;
+}
