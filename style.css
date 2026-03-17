@@ -233,3 +233,39 @@ animation: bounce 1.5s infinite;
 0%,100% { transform: translateY(0); }
 50% { transform: translateY(10px); }
 }
+
+/* NAVBAR */
+.navbar {
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo {
+color:#00fff2;
+font-weight:bold;
+font-size:18px;
+}
+
+.nav-links {
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a {
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover {
+color:#00fff2;
+}
