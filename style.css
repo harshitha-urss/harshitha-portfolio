@@ -1,15 +1,16 @@
 body {
 margin:0;
-font-family:Segoe UI;
+font-family: 'Segoe UI', sans-serif;
 background:#050505;
 color:white;
+overflow-x:hidden;
 }
 
 /* HERO */
 .hero {
 text-align:center;
 padding:120px 20px;
-background: radial-gradient(circle at top, #00fff2, #050505);
+background: radial-gradient(circle at top, #00fff2 0%, #050505 70%);
 }
 
 .title {
@@ -20,6 +21,7 @@ color:#00fff2;
 max-width:600px;
 margin:auto;
 opacity:0.8;
+line-height:1.6;
 }
 
 .btn {
@@ -29,6 +31,7 @@ background:#00fff2;
 color:black;
 text-decoration:none;
 border-radius:30px;
+font-weight:500;
 }
 
 .outline {
@@ -50,39 +53,53 @@ margin-bottom:40px;
 
 /* FEATURED */
 .featured {
-display:flex;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap:30px;
-justify-content:center;
-flex-wrap:wrap;
+max-width:1000px;
+margin:auto;
 }
 
 .big-card {
 background:#0a0a0a;
 padding:30px;
-width:300px;
 border-radius:15px;
-box-shadow:0 0 25px #00fff2;
 transition:0.3s;
+border:1px solid rgba(0,255,242,0.2);
 }
 
 .big-card:hover {
-transform:scale(1.05);
+transform:translateY(-8px);
+box-shadow:0 0 15px rgba(0,255,242,0.4);
 }
 
 /* GRID */
 .grid {
-display:flex;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 gap:20px;
-justify-content:center;
+max-width:1000px;
+margin:auto;
 }
 
 .card {
 background:#0a0a0a;
 padding:20px;
-width:220px;
 border-radius:12px;
-box-shadow:0 0 15px #00fff2;
+transition:0.3s;
+border:1px solid rgba(0,255,242,0.15);
+}
+
+.card:hover {
+transform:translateY(-6px);
+box-shadow:0 0 12px rgba(0,255,242,0.3);
+}
+
+/* TEXT FIX */
+.card p {
+font-size:14px;
+opacity:0.8;
+line-height:1.4;
 }
 
 /* SERVICES */
@@ -91,12 +108,20 @@ display:flex;
 justify-content:center;
 gap:20px;
 flex-wrap:wrap;
+max-width:800px;
+margin:auto;
 }
 
 .services div {
-padding:15px 25px;
-border:1px solid #00fff2;
+padding:12px 20px;
+border:1px solid rgba(0,255,242,0.3);
 border-radius:20px;
+transition:0.3s;
+}
+
+.services div:hover {
+background:#00fff2;
+color:black;
 }
 
 /* CONTACT */
@@ -104,12 +129,14 @@ border-radius:20px;
 margin:10px;
 display:inline-block;
 color:#00fff2;
+text-decoration:none;
 }
 
 /* FOOTER */
 footer {
 text-align:center;
-padding:20px;
+padding:25px;
 background:#000;
-opacity:0.6;
+opacity:0.7;
+font-size:14px;
 }
