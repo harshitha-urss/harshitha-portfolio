@@ -224,7 +224,7 @@ box-shadow:0 0 20px rgba(0,255,242,0.4);
 }
 
 .scroll-down {
-margin-top:40px;
+margin-top:25px;   /* reduce space */
 font-size:14px;
 opacity:0.7;
 animation: bounce 1.5s infinite;
