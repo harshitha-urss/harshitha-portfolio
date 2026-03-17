@@ -95,7 +95,7 @@ font-size:18px;
 
 /* SECTIONS */
 section {
-padding:80px 20px;
+padding:60px 20px;   /* reduced from 80px */
 text-align:center;
 }
 
@@ -260,4 +260,16 @@ to {
 opacity:1;
 transform:translateY(0);
 }
+}
+
+.hero h1 {
+margin-bottom:5px;
+}
+
+.title {
+margin:5px 0;
+}
+
+.tagline {
+margin:15px auto;
 }
