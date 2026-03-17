@@ -11,7 +11,15 @@ el.classList.add("active");
 });
 
 // TYPING EFFECT
-const text = ["AI & ML Engineer", "Full Stack Developer", "Freelancer"];
+const text = [
+"AI & ML Engineer",
+"Full Stack Developer",
+"Deep Learning Project Designer",
+"Generative AI Developer",
+"AI Solutions Builder",
+"Computer Vision Engineer",
+"Freelancer"
+];
 let i = 0, j = 0, current = "", deleting = false;
 
 function type() {
