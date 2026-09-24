@@ -10,6 +10,7 @@ overflow-x:hidden;
     width: 150px;
     height: 150px;
     object-fit: cover;
+    object-position: center 25%;
     border-radius: 50%;
     border: 2px solid #00fff2;
     box-shadow: 0 0 10px rgba(0,255,242,0.35);
