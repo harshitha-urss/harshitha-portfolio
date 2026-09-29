@@ -299,3 +299,11 @@ opacity:0.7;
 margin-bottom:10px;
 font-size:14px;
 }
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
