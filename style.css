@@ -309,15 +309,17 @@ font-size:14px;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .skill-card {
-    padding: 20px;
+    flex: 1;
+    padding: 18px 20px;
     text-align: center;
     border-radius: 12px;
     transition: 0.3s;
