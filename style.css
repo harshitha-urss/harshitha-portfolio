@@ -310,14 +310,14 @@ font-size:14px;
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .skill-card {
-    padding: 18px 22px;
+    padding: 20px;
     text-align: center;
     border-radius: 12px;
     transition: 0.3s;
@@ -330,10 +330,16 @@ font-size:14px;
 
 .skill-card h3 {
     color: #00fff2;
-    margin: 5px 0 10px;
+    margin: 5px 0 12px;
 }
 
 .skill-card p {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
